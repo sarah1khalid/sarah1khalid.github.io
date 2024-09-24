@@ -38,7 +38,7 @@ p {
     font-family: 'Arial', sans-serif;
     font-size: 12pt;
     color: #880e4f; /* Dark pink color */
-    margin-bottom: 12pt; /* Space between paragraphs */
+    margin-bottom: 18pt; /* Space between paragraphs */
 }
 
 /* Links */
@@ -70,7 +70,7 @@ a:active {
 .link-row {
     display: flex;
     justify-content: space-between;
-    margin: 10pt 0; /* Space between rows */
+    margin: 20pt 0; /* Space between rows */
     padding: 10pt;
     border: 1px solid #f48fb1; /* Light pink border */
     border-radius: 5px; /* Slightly rounded corners */
