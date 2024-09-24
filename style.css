@@ -1,6 +1,6 @@
 ﻿/* Basic Reset */
 * {
-    margin: 0;
+    margin: 18pt;
     padding: 0;
     box-sizing: border-box;
 }
@@ -17,7 +17,7 @@ body {
 /* Headings */
 h1 {
     font-family: 'Georgia', serif;
-    font-size: 24pt;
+    font-size: 26pt;
     color: #d5006d; /* Bright pink color */
 }
 
@@ -29,7 +29,7 @@ h2 {
 
 h3 {
     font-family: 'Tahoma', sans-serif;
-    font-size: 16pt;
+    font-size: 14pt;
     color: #f06292; /* Light pink color */
 }
 
@@ -52,8 +52,8 @@ a:visited {
 }
 
 a:hover {
-    color: #ff4081; /* Light pink on hover */
-    text-decoration: underline; /* Underline on hover */
+   color: #ff4081; /* Light pink on hover */
+{font-size:24; font-weight:bold; color: #ff4081;}
 }
 
 a:active {
