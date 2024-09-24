@@ -1,0 +1,82 @@
+﻿/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #ffe4e1; /* Light pink background */
+    color: #6a1b9a; /* Darker purple-pink text */
+    margin: 20pt; /* Margin greater than 10pt */
+}
+
+/* Headings */
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 24pt;
+    color: #d5006d; /* Bright pink color */
+}
+
+h2 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 20pt;
+    color: #ec407a; /* Medium pink color */
+}
+
+h3 {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 16pt;
+    color: #f06292; /* Light pink color */
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 12pt;
+    color: #880e4f; /* Dark pink color */
+    margin-bottom: 12pt; /* Space between paragraphs */
+}
+
+/* Links */
+a {
+    color: #ec407a; /* Medium pink color for links */
+    text-decoration: none; /* No underline */
+}
+
+a:visited {
+    color: #f50057; /* Bright pink for visited links */
+}
+
+a:hover {
+    color: #ff4081; /* Light pink on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+a:active {
+    color: #c51162; /* Dark pink when active */
+}
+
+/* Table-like layout with divs */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20pt 0; /* Space around the container */
+}
+
+.link-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10pt 0; /* Space between rows */
+    padding: 10pt;
+    border: 1px solid #f48fb1; /* Light pink border */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.link-row div {
+    flex: 1; /* Equal width for each column */
+    padding: 5pt; /* Space inside each cell */
+}
