@@ -5,10 +5,9 @@
 }
 
 .linkedin-profile-picture {
-    width: 150px; /* Adjust width */
-    height: 150px; /* Adjust height */
-    border-radius: 70%; /* Keep it circular */
-    margin-bottom: 20px; /* Space below the image */
+    width: 100pt; /* Adjust width */
+    height: 100pt; /* Adjust height */
+    margin-bottom: 20pt; /* Space below the image */
 }
 
 body {
