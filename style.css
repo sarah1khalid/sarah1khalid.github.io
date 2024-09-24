@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.linkedin-profile-picture {
+    width: 150px; /* Adjust width */
+    height: 150px; /* Adjust height */
+    border-radius: 70%; /* Keep it circular */
+    margin-bottom: 20px; /* Space below the image */
+}
+
 body {
     font-family: Arial, sans-serif; /* Font for the body */
     font-size: 12pt; /* Font size for the body */
