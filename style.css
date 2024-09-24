@@ -61,14 +61,6 @@ a:active {
     color: #ff3399; /* Brighter pink when clicked */
 }
 
-/* Image styling */
-.linkedin-profile-picture {
-    width: 200px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    border-radius: 70%; /* Optional: make it circular */
-    margin-bottom: 20px; /* Space below the image */
-}
-
 /* Skills and Certifications section */
 .skills, .certifications {
     margin-top: 20px;
