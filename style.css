@@ -1,7 +1,7 @@
 ﻿/* Basic Reset */
 * {
     margin: 18pt;
-    padding: 0;
+    padding: 2pt;
     box-sizing: border-box;
 }
 
@@ -52,8 +52,8 @@ a:visited {
 }
 
 a:hover {
-   color: #ff4081; /* Light pink on hover */
-{font-size:24; font-weight:bold; color: #ff4081;}
+    color: #ff4081; /* Light pink on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
 a:active {
@@ -79,4 +79,22 @@ a:active {
 .link-row div {
     flex: 1; /* Equal width for each column */
     padding: 5pt; /* Space inside each cell */
+}
+/* Table-like layout styles */
+.table {
+    display: flex;
+    flex-direction: column;
+    margin: 10pt 0; /* Space around the table */
+}
+
+.table-row {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 5pt; /* Space inside each row */
+    border-bottom: 1px solid #f48fb1; /* Light pink border for rows */
+}
+
+.table-cell {
+    padding: 5pt; /* Space inside each cell */
+    flex: 1; /* Equal width for each cell */
 }
