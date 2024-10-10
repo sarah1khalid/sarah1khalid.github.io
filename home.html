@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <!-- Add other nav items here -->
+   <nav>
+        <ul class="nav-list">
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="home.html">Home</a>
+            </li>
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="#">More</a>
+                <ul class="dropdown-content">
+                    <li><a href="#Work-Experience">Work Experience</a></li>
+                    <li><a href="#contact-info">Contact Information</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
+
     <h1>Welcome to the Home Page!</h1>
     <!-- Add content here -->
     
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
 </body>
 </html>
