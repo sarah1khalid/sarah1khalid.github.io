@@ -8,20 +8,46 @@
    <link rel="stylesheet"
       href="style.css">
 <body>
+
+<!-- Navigation Menu -->
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="page1.html">Home</a>
+            </li>
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="page2.html">Portfolio</a>
+            </li>
+            <li class="nav-item" onmouseover="hoverIn(this)" onmouseout="hoverOut(this)">
+                <a href="#">More</a>
+                <ul class="dropdown-content">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-info">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
    <header>
        <div class="container">
            <h1>Sarah Khalid</h1>
        </div>
    </header>
-  
-   <div class="container main"></div>
-       <!-- Add LinkedIn Profile Picture -->
-       <div style="text-align: center;">
-           <a href="linkedin.com/in/sarah-khalid-472664244" target="_blank">
-               <img src="https://media.licdn.com/dms/image/v2/D4E03AQGUUyOC6DD3PA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724990630688?e=1732147200&v=beta&t=111SkvlQtP5WtKFpYwgyZD_JpQST_FOy1XrIMU20SFs" alt="Sarah Khalid LinkedIn Profile Picture" class="linkedin-profile-picture">
-           </a>
-       </div>
 
+
+   <!-- Button for Prompting User's Name -->
+    <div>
+        <button id="nameButton">Enter Your Name</button>
+        <p id="nameDisplay"></p> <!-- Name will display here -->
+    </div>
+    
+    <!-- Clickable Image -->
+    <div style="text-align: center;">
+        <a href="#" id="profileImage">
+            <img src="images/profile.jpeg" alt="Sarah Khalid Profile" class="small-image">
+        </a>
+    </div>
+  
  <h2>Education</h2>
     <div class="table">
         <div class="table-row">
@@ -168,5 +194,7 @@
    <footer>
        <p>&copy; 2024 Sarah Khalid. All rights reserved.</p>
    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
