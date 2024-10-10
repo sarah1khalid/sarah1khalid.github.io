@@ -173,6 +173,30 @@ nav ul li:hover {
     background-color: #ff9fbc; /* Dropdown item hover color */
 }
 
+/* Small Image Styling */
+.small-image {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.enlarged-image {
+    transform: scale(2); /* Enlarge the image */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects for Nav Menu */
+nav ul li a:hover {
+    background-color: #ff3e66;
+}
+
+/* Display User Name Styling */
+#nameDisplay {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ff6f91;
+}
 
 /* Footer styling */
 footer {
