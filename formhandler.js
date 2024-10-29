@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem("contactFormData", JSON.stringify(formData));
 
             // Confirm data stored
-            alert("Data has been saved to local storage!");
+            alert("thank you for your feedback!");
 
             // Reset form
             form.reset();

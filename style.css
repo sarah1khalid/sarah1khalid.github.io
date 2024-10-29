@@ -228,6 +228,19 @@ form input[type="checkbox"] {
     margin-right: 5px;
 }
 
+/* Remove the border from fieldsets */
+fieldset {
+    border: none; /* Remove the border */
+    margin: 0; /* remove margin */
+    padding: 0; /* remove padding */
+}
+
+/* Add padding for the legend */
+fieldset legend {
+    margin-bottom: 8px; /* Adjust space between legend and checkboxes */
+}
+
+
 form button[type="submit"],
 form button[type="reset"] {
     background-color: #ff4d94;
