@@ -1,32 +1,22 @@
-// JavaScript source code
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-    const submitBtn = document.getElementById('submitBtn');
-    const clearBtn = document.getElementById('clearBtn');
+// Save data on form submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-    // Handle form submission
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+        contactMethod: document.querySelector('input[name="contactMethod"]:checked').value,
+        topics: document.getElementById('topics').value,
+        services: Array.from(document.querySelectorAll('input[name="services"]:checked')).map(el => el.value),
+        feedback: document.getElementById('feedback').value
+    };
 
-        // Capture form data
-        const formData = {
-            name: form.name.value,
-            email: form.email.value,
-            rating: form.rating.value,
-            services: Array.from(form.services).filter(service => service.checked).map(service => service.value),
-            message: form.message.value
-        };
+    localStorage.setItem('contactFormData', JSON.stringify(formData));
+    alert('Form data saved!');
+});
 
-        // Store data in local storage
-        localStorage.setItem('formData', JSON.stringify(formData));
-        alert('Form data saved successfully!');
-        
-        // Clear form fields
-        form.reset();
-    });
-
-    // Clear button resets the form
-    clearBtn.addEventListener('click', function() {
-        form.reset();
-    });
+// Clear form data on reset
+document.getElementById('contactForm').addEventListener('reset', function() {
+    localStorage.removeItem('contactFormData');
 });
