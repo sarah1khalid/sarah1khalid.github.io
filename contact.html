@@ -18,51 +18,45 @@
 
     <h1>Contact Me</h1>
     <form id="contactForm">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-        <label>Preferred Contact Method:</label>
-        <input type="radio" id="emailContact" name="contactMethod" value="Email">
-        <label for="emailContact">Email</label>
-        <input type="radio" id="phoneContact" name="contactMethod" value="Phone">
-        <label for="phoneContact">Phone</label>
-        <input type="radio" id="textContact" name="contactMethod" value="Text">
-        <label for="textContact">Text</label>
+    <label for="age">Age Group:</label>
+    <select id="age" name="age">
+        <option value="18-25">18-25</option>
+        <option value="26-35">26-35</option>
+        <option value="36-45">36-45</option>
+        <option value="46+">46+</option>
+    </select>
 
-        <label for="age">Age Group:</label>
-        <select id="age" name="age">
-            <option value="">Select an age group</option>
-            <option value="under18">Under 18</option>
-            <option value="18-25">18-25</option>
-            <option value="26-35">26-35</option>
-            <option value="36-50">36-50</option>
-            <option value="50plus">50+</option>
-        </select>
+    <label for="service">What Service Are You Interested In?</label>
+    <select id="service" name="service">
+        <option value="data_science">Data Science</option>
+        <option value="cybersecurity">Cybersecurity</option>
+        <option value="data_visualization">Data Visualization</option>
+    </select>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone">
+    <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <label for="contact-email">
+            <input type="radio" id="contact-email" name="contact_method" value="email"> Email
+        </label>
+        <label for="contact-phone">
+            <input type="radio" id="contact-phone" name="contact_method" value="phone"> Phone
+        </label>
+    </fieldset>
 
-        <label for="service">What Service Are You Interested In?</label>
-         <select id="service" name="service">
-            <option value="data-science">Data Science</option>
-             <option value="cybersecurity">Cybersecurity</option>
-             <option value="data-visualization">Data Visualization</option>
-        </select>
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments"></textarea>
 
-        <label for="date">Preferred Contact Date:</label>
-        <input type="date" id="date" name="date">
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" placeholder="Your message here..."></textarea>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-    </form>
+    <button type="submit">Submit</button>
+</form>
 
 <script src="script1.js"></script>
-<script src="script.js"></script>
+
+
 </body>
 </html>
