@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Confirm data stored
     alert("Data has been saved to local storage!");
 
+    //reset form
     form.reset();
 
 });
