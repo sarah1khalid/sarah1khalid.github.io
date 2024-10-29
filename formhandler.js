@@ -9,14 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
                 service: document.getElementById("service").value,
-                message: document.getElementById("message").value,
+                feedback: document.getElementById("feedback").value,
                 ageGroup: document.getElementById("age").value,
+                websiteSource: document.getElementById("websiteSource").value,
+                features: Array.from(document.querySelectorAll('input[name="features"]:checked')).map(el => el.value), // Collect selected features
                 communication: document.querySelector('input[name="communication"]:checked') 
                                ? document.querySelector('input[name="communication"]:checked').value 
-                               : 'No preference', // Default value if none selected
-                followUp: document.getElementById("follow-up") 
-                           ? document.getElementById("follow-up").checked 
-                           : false // Check if follow-up checkbox exists
+                               : 'No preference' // Default value if none selected
             };
 
             // Store in local storage

@@ -18,41 +18,54 @@
 
     <h1>Contact Me</h1>
     <form id="contactForm">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="service">What Service Are You Interested In?</label>
-    <select id="service" name="service" required>
-        <option value="dataScience">Data Science</option>
-        <option value="cybersecurity">Cybersecurity</option>
-        <option value="dataVisualization">Data Visualization</option>
-    </select>
-    
-    <label for="message">Your Message:</label>
-    <textarea id="message" name="message" required></textarea>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="age">Age Group:</label>
-    <select id="age" name="age" required>
-        <option value="under18">Under 18</option>
-        <option value="18-24">18-24</option>
-        <option value="25-34">25-34</option>
-        <option value="35-44">35-44</option>
-        <option value="45+">45+</option>
-    </select>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label>Preferred Communication:</label>
-    <label><input type="radio" name="communication" value="email" required>Email</label>
-    <label><input type="radio" name="communication" value="phone">Phone</label>
-    <label><input type="radio" name="communication" value="text">Text</label>
+        <label for="service">What Service Are You Interested In?</label>
+        <select id="service" name="service" required>
+            <option value="dataScience">Data Science</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="dataVisualization">Data Visualization</option>
+        </select>
 
-    <label for="follow-up">Would you like a follow-up?</label>
-    <input type="checkbox" id="follow-up" name="follow-up">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
 
-    <button type="submit">Submit</button>
-</form>
+        <label for="age">Age Group:</label>
+        <select id="age" name="age" required>
+            <option value="under18">Under 18</option>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45+">45+</option>
+        </select>
+
+        <label for="websiteSource">How did you find my website?</label>
+        <select id="websiteSource" name="websiteSource" required>
+            <option value="searchEngine">Search Engine</option>
+            <option value="referral">Referral</option>
+            <option value="socialMedia">Social Media</option>
+            <option value="other">Other</option>
+        </select>
+
+        <fieldset>
+            <legend>What features do you like about this website? (Select all that apply)</legend>
+            <label><input type="checkbox" name="features" value="design"> Design</label>
+            <label><input type="checkbox" name="features" value="content"> Content</label>
+            <label><input type="checkbox" name="features" value="navigation"> Navigation</label>
+            <label><input type="checkbox" name="features" value="speed"> Speed</label>
+        </fieldset>
+
+        <label>Preferred Communication:</label>
+        <label><input type="radio" name="communication" value="email" required>Email</label>
+        <label><input type="radio" name="communication" value="phone">Phone</label>
+        <label><input type="radio" name="communication" value="text">Text</label>
+
+        <button type="submit">Submit</button>
+    </form>
 
 
 <script src="formhandler.js"></script>
