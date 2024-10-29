@@ -191,6 +191,69 @@ nav ul li a:hover {
     background-color: #ff3e66;
 }
 
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ff99cc;
+    border-radius: 8px;
+    background-color: #ffe6f2;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #c70067;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffb3d1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    color: #660033;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button[type="submit"],
+form button[type="reset"] {
+    background-color: #ff4d94;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button[type="submit"]:hover,
+form button[type="reset"]:hover {
+    background-color: #ff66b3;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+h1 {
+    text-align: center;
+    color: #ff4d94;
+    margin-top: 20px;
+}
+
 /* Display User Name Styling */
 #nameDisplay {
     font-size: 1.2em;
