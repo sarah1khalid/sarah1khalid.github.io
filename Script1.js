@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // Confirm data stored
     alert("Data has been saved to local storage!");
 
-    } else {
-        console.error("Form with ID 'contactForm' not found.");
-    }
+    form.reset();
+
 });
