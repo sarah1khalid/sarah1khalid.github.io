@@ -1,5 +1,8 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent page refresh
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+    if (form) {
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page refresh
     
     // Collect form data
     const formData = {
@@ -17,4 +20,8 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     
     // Confirm data stored
     alert("Data has been saved to local storage!");
+
+    } else {
+        console.error("Form with ID 'contactForm' not found.");
+    }
 });
