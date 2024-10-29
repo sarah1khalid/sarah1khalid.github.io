@@ -20,41 +20,40 @@
     <form id="contactForm">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
-
+    
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
+    
+    <label for="service">What Service Are You Interested In?</label>
+    <select id="service" name="service" required>
+        <option value="dataScience">Data Science</option>
+        <option value="cybersecurity">Cybersecurity</option>
+        <option value="dataVisualization">Data Visualization</option>
+    </select>
+    
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" required></textarea>
 
     <label for="age">Age Group:</label>
-    <select id="age" name="age">
-        <option value="18-25">18-25</option>
-        <option value="26-35">26-35</option>
-        <option value="36-45">36-45</option>
-        <option value="46+">46+</option>
+    <select id="age" name="age" required>
+        <option value="under18">Under 18</option>
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-44">35-44</option>
+        <option value="45+">45+</option>
     </select>
 
-    <label for="service">What Service Are You Interested In?</label>
-    <select id="service" name="service">
-        <option value="data_science">Data Science</option>
-        <option value="cybersecurity">Cybersecurity</option>
-        <option value="data_visualization">Data Visualization</option>
-    </select>
+    <label>Preferred Communication:</label>
+    <label><input type="radio" name="communication" value="email" required>Email</label>
+    <label><input type="radio" name="communication" value="phone">Phone</label>
+    <label><input type="radio" name="communication" value="text">Text</label>
 
-    <fieldset>
-        <legend>Preferred Contact Method:</legend>
-        <label for="contact-email">
-            <input type="radio" id="contact-email" name="contact_method" value="email"> Email
-        </label>
-        <label for="contact-phone">
-            <input type="radio" id="contact-phone" name="contact_method" value="phone"> Phone
-        </label>
-    </fieldset>
-
-   <label for="message">Your Message:</label>
-<textarea id="message" name="message" required></textarea>
-
+    <label for="follow-up">Would you like a follow-up?</label>
+    <input type="checkbox" id="follow-up" name="follow-up">
 
     <button type="submit">Submit</button>
 </form>
+
 
 <script src="formhandler.js"></script>
 
