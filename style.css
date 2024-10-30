@@ -231,8 +231,8 @@ form input[type="checkbox"] {
 /* Remove the border from fieldsets */
 fieldset {
     border: none; /* Remove the border */
-    margin: 0; /* remove margin */
-    padding: 0; /* remove padding */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
 }
 
 /* Add padding for the legend */
@@ -240,6 +240,15 @@ fieldset legend {
     margin-bottom: 8px; /* Adjust space between legend and checkboxes */
 }
 
+/* Add margin to the fieldset to increase space between sections */
+fieldset + fieldset {
+    margin-top: 30px; /* Increase space above the second fieldset */
+}
+
+/* Style for the "Preferred Communication" section */
+.communication-section {
+    margin-bottom: 20px; /* Space below this section */
+}
 
 form button[type="submit"],
 form button[type="reset"] {
@@ -266,7 +275,6 @@ h1 {
     color: #ff4d94;
     margin-top: 20px;
 }
-
 /* Display User Name Styling */
 #nameDisplay {
     font-size: 1.2em;

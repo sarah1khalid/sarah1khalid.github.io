@@ -52,17 +52,25 @@
         </select>
 
         <fieldset>
-            <legend>What features do you like about this website? (Select all that apply)</legend>
-            <label><input type="checkbox" name="features" value="design"> Design</label>
-            <label><input type="checkbox" name="features" value="content"> Content</label>
-            <label><input type="checkbox" name="features" value="navigation"> Navigation</label>
-            <label><input type="checkbox" name="features" value="speed"> Speed</label>
-        </fieldset>
+    <legend>What features do you like about this website? (Select all that apply)</legend>
+    <label><input type="checkbox" name="features" value="design"> Design</label>
+    <label><input type="checkbox" name="features" value="content"> Content</label>
+    <label><input type="checkbox" name="features" value="navigation"> Navigation</label>
+    <label><input type="checkbox" name="features" value="speed"> Speed</label>
+</fieldset>
 
-        <label>Preferred Communication:</label>
-        <label><input type="radio" name="communication" value="email" required>Email</label>
-        <label><input type="radio" name="communication" value="phone">Phone</label>
-        <label><input type="radio" name="communication" value="text">Text</label>
+        <fieldset class="communication-section">
+    <legend>Preferred Communication</legend>
+    <label>
+        <input type="radio" name="communication" value="email"> Email
+    </label>
+    <label>
+        <input type="radio" name="communication" value="phone"> Phone
+    </label>
+    <label>
+        <input type="radio" name="communication" value="text"> Text
+    </label>
+</fieldset>
 
         <button type="submit">Submit</button>
     </form>
