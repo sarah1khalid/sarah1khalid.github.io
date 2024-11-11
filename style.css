@@ -367,3 +367,15 @@ body.high-contrast button {
 body.high-contrast button:hover {
     background-color: #EEE; /* Slightly darker on hover */
 }
+
+/* Caption styling */
+.caption {
+    font-size: 0.9em; /* Slightly smaller text for captions */
+    color: #660033; /* Default caption color */
+    margin-top: 8px;
+}
+
+/* High Contrast Mode for Captions */
+body.high-contrast .caption {
+    color: #FFF; /* White caption text in high-contrast mode */
+}
