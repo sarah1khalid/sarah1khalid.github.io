@@ -289,3 +289,35 @@ footer {
     font-size: 10pt;
     color: #99004d; /* Dark pink */
 }
+
+/* Basic button styles for Accessibility */
+button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+/* High Contrast Mode for Color Blind Accessibility */
+body.high-contrast {
+    background-color: #000; /* Black background */
+    color: #FFF; /* White text */
+}
+
+body.high-contrast button {
+    background-color: #FFF; /* White button in high contrast mode */
+    color: #000; /* Black text */
+}
+
+/* Larger Font for Text Enlargement */
+body.large-text {
+    font-size: 1.2em;
+}
