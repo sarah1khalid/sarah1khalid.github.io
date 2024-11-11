@@ -331,3 +331,34 @@ img {
     max-height: 400px; /* Limits maximum height to prevent large images */
 }
 
+/* Center video and set a max width */
+iframe {
+    max-width: 100%;
+    width: 600px; /* Adjust based on desired video width */
+    height: 350px; /* Adjust height based on aspect ratio */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Heading Styles for High Contrast Mode */
+body.high-contrast h1, 
+body.high-contrast h2, 
+body.high-contrast h3 {
+    color: #FFF; /* Change heading text to white in high-contrast mode */
+}
+
+/* High Contrast Mode */
+body.high-contrast {
+    background-color: #000; /* Black background */
+    color: #FFF; /* White text */
+}
+
+body.high-contrast button {
+    background-color: #FFF; /* White button in high contrast mode */
+    color: #000; /* Black text */
+    border: 1px solid #aaa; /* Light border */
+}
+
+body.high-contrast button:hover {
+    background-color: #EEE; /* Slightly darker on hover */
+}
