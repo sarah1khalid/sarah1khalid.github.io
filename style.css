@@ -380,3 +380,7 @@ body.high-contrast .caption {
     color: #FFF; /* White caption text in high-contrast mode */
 }
 
+body.high-contrast header {
+    background color: #ffffff;
+    color: #111111;
+}
