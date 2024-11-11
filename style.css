@@ -323,3 +323,11 @@ body.high-contrast button:hover {
     text-align: center;
 }
 
+img {
+    max-width: 100%; /* Ensures image does not exceed container width */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Centers image if container has text-align: center */
+    margin: 0 auto; /* Centers image horizontally */
+    max-height: 400px; /* Limits maximum height to prevent large images */
+}
+
