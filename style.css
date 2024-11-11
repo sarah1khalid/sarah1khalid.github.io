@@ -384,16 +384,3 @@ h1, h2, h3 {
     margin-top: 30px; /* Adds more space above the headings */
     margin-bottom: 20px; /* Adds space below each heading */
 }
-
-/* Navbar styles for high-contrast mode */
-body.high-contrast nav {
-    background-color: #fff; /* White background */
-}
-
-body.high-contrast nav ul li a {
-    color: #000; /* Black text for links */
-}
-
-body.high-contrast nav ul li:hover {
-    background-color: #ccc; /* Darker background on hover */
-}
