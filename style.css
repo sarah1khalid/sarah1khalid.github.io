@@ -290,34 +290,36 @@ footer {
     color: #99004d; /* Dark pink */
 }
 
-/* Basic button styles for Accessibility */
-button {
-    padding: 10px 15px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #4CAF50; /* Green */
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049; /* Darker Green */
-}
-
-/* High Contrast Mode for Color Blind Accessibility */
+/* High Contrast Mode Styling */
 body.high-contrast {
     background-color: #000; /* Black background */
     color: #FFF; /* White text */
 }
 
-body.high-contrast button {
-    background-color: #FFF; /* White button in high contrast mode */
-    color: #000; /* Black text */
+body.high-contrast .container {
+    background-color: #111; /* Darker container background */
+    border-color: #555; /* Dark border */
 }
 
-/* Larger Font for Text Enlargement */
-body.large-text {
-    font-size: 1.2em;
+body.high-contrast button {
+    background-color: #FFF; /* White button */
+    color: #000; /* Black text on button */
+    border: 1px solid #aaa; /* Light border */
 }
+
+body.high-contrast button:hover {
+    background-color: #EEE; /* Slightly darker on hover */
+}
+
+/* Centering the Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Centering the container */
+    padding: 20px;
+    background-color: #ffe6f2; /* Original light pink */
+    border: 2px solid #ff99cc; /* Original border color */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
