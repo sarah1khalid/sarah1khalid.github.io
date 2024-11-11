@@ -311,6 +311,11 @@ body.high-contrast button:hover {
     background-color: #EEE; /* Slightly darker on hover */
 }
 
+/* Larger Font for Text Enlargement */
+body.large-text {
+    font-size: 1.2em;
+}
+
 /* Centering the Container */
 .container {
     max-width: 800px;
