@@ -384,3 +384,21 @@ body.high-contrast nav {
     background color: #ffffff;
     color: #111111;
 }
+
+/* Default navbar styles */
+nav {
+    background-color: #ff6f91; /* Original navbar background color */
+}
+
+nav ul li a {
+    color: white; /* Original navbar link color */
+}
+
+/* High Contrast Mode for Navbar */
+body.high-contrast nav {
+    background-color: #FFF; /* White background for navbar in high-contrast mode */
+}
+
+body.high-contrast nav ul li a {
+    color: #000; /* Black text for links in high-contrast mode */
+}
