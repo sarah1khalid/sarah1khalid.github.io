@@ -290,10 +290,66 @@ footer {
     color: #99004d; /* Dark pink */
 }
 
-/* Basic button styles for Accessibility */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center Container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Video Section */
+#media iframe {
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Button Styles */
 button {
     padding: 10px 15px;
     font-size: 1em;
+    margin: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -306,18 +362,33 @@ button:hover {
     background-color: #45a049; /* Darker Green */
 }
 
-/* High Contrast Mode for Color Blind Accessibility */
-body.high-contrast {
-    background-color: #000; /* Black background */
-    color: #FFF; /* White text */
+/* Accessibility Sections */
+#accessibility, #color-scheme {
+    margin: 20px 0;
 }
 
-body.high-contrast button {
-    background-color: #FFF; /* White button in high contrast mode */
-    color: #000; /* Black text */
+/* Image Gallery Layout */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-/* Larger Font for Text Enlargement */
-body.large-text {
-    font-size: 1.2em;
+.image-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-item p {
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0;
 }
