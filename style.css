@@ -84,8 +84,9 @@ a:active {
 }
 
 .button:hover {
-    background-color: #f8bbd0; /* Light pastel pink for hover */
+    background-color: #ff66b3; /* Lighter pink on hover */
 }
+
 /* Contact information styling */
 .contact-info a {
     color: #b30059; /* Dark pink */
