@@ -11,33 +11,33 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Font for the body */
-    font-size: 12pt; /* Font size for the body */
-    background-color: #ffe6f2; /* Light pink background */
-    color: #4d004d; /* Darker pink text color */
-    margin: 20pt; /* Margin for all sides */
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #fce4ec; /* Pastel pink for background */
+    color: #4a0039; /* Dark muted pink for text */
+    margin: 20pt;
 }
 
 /* Heading Styles */
 h1 {
-    font-family: 'Georgia', serif; /* Font for H1 */
-    font-size: 2.5em; /* Size for H1 */
-    color: #ff4d94; /* Bright pink for H1 */
-    margin-bottom: 10pt; /* Space below H1 */
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    color: #880e4f; /* Dark pink for H1 */
+    margin-bottom: 10pt;
 }
 
 h2 {
-    font-family: 'Arial', sans-serif; /* Font for H2 */
-    font-size: 2em; /* Size for H2 */
-    color: #c70067; /* Darker pink for H2 */
-    margin-bottom: 8pt; /* Space below H2 */
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #ad1457; /* Slightly lighter dark pink for H2 */
+    margin-bottom: 8pt;
 }
 
 h3 {
-    font-family: 'Arial', sans-serif; /* Font for H3 */
-    font-size: 1.5em; /* Size for H3 */
-    color: #99004d; /* Even darker pink for H3 */
-    margin-bottom: 6pt; /* Space below H3 */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: #c2185b; /* Muted pink for H3 */
+    margin-bottom: 6pt;
 }
 
 /* Paragraph Styles */
@@ -76,7 +76,7 @@ a:active {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff4d94; /* Bright pink */
+    background-color: #d81b60; /* Muted pink for buttons */
     color: white;
     text-align: center;
     border-radius: 5px;
@@ -84,9 +84,8 @@ a:active {
 }
 
 .button:hover {
-    background-color: #ff66b3; /* Lighter pink on hover */
+    background-color: #f8bbd0; /* Light pastel pink for hover */
 }
-
 /* Contact information styling */
 .contact-info a {
     color: #b30059; /* Dark pink */
@@ -131,7 +130,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #ff6f91; /* Main background color */
+    background-color: #d81b60; /* Muted pink for navbar */
     overflow: hidden;
 }
 
@@ -142,13 +141,13 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 14px 20px;
-    color: white; /* Text color */
+    color: white; /* High contrast text color */
     text-decoration: none;
     text-align: center;
 }
 
 nav ul li:hover {
-    background-color: #ff3e66; /* Hover background color */
+    background-color: #f8bbd0; /* Light pastel pink for hover */
 }
 
 .dropdown-content {
